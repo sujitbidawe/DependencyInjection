@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id = "someName" class = "com.bl.di.Student">
-        <property name = "studentName" value = "someName"></property>
-        <property name = "studentId" value = "1"></property>
+        <constructor-arg name="studentId" value="1" type="int"/>
+        <constructor-arg name="studentName" value="sujit" type="java.lang.String"/>
     </bean>
-    <bean id = "sujit" class = "com.bl.di.Student">
-        <property name = "studentName" value = "sujit"></property>
-        <property name = "studentId" value = "2"></property>
+
+    <bean id = "otherName" class = "com.bl.di.Student">
+        <constructor-arg name="studentId" value="2" type="int"/>
     </bean>
 
 </beans>

@@ -5,20 +5,18 @@ public class Student {
     private int studentId;
     private String studentName;
 
-    public void displayStudentInfo() {
-        System.out.println("Student name: " + studentName);
-        System.out.println("Student ID: " + studentId);
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-        System.out.println("name set");
-    }
-
-    public void setStudentId(int studentId) {
+    public Student(int studentId, String studentName) {
         this.studentId = studentId;
-        System.out.println("id set");
+        this.studentName = studentName;
     }
 
+    public Student(int studentId) {
+        this.studentId = studentId;
+    }
+
+    public void displayStudentInfo() {
+        System.out.println("Student ID: " + studentId);
+        System.out.println("Student name: " + studentName);
+    }
 
 }

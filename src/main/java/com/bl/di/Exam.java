@@ -12,7 +12,7 @@ public class Exam {
         Student student1 = context.getBean("someName", Student.class);
         student1.displayStudentInfo();
 
-        Student student2 = context.getBean("sujit", Student.class);
+        Student student2 = context.getBean("otherName", Student.class);
         student2.displayStudentInfo();
     }
 }
